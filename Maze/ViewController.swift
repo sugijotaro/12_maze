@@ -65,9 +65,9 @@ class ViewController: UIViewController {
             }
         }
         
-        playerView = UIView(frame: CGRect(x: 0, y: 0, width: cellWidth / 6, height: cellHeight / 6))
+        playerView = UIImageView(image: UIImage(named: "superball"))
+        playerView.frame = CGRect(x: 0, y: 0, width: cellHeight / 6, height: cellHeight / 6)
         playerView.center = startView.center
-        playerView.backgroundColor = .gray
         view.addSubview(playerView)
         
         playerMotionManager = CMMotionManager()
